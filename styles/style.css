@@ -1,73 +1,165 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
-    font-family: 'Work Sans', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Common Styles  */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
 
 header {
     background-color: #FFF4E7;
 }
-.nav-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 0px;
-    align-items: center
+
+.primary-btn {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FF900E;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
 }
 
-.logo {
-    color: #131313
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #131313;
+}
+
+h2 {
+    color: #131313;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+p {
+    color: #727272;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+/* Menu bar starts  */
+
+.container {
+    max-width: 1200px;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .items {
     display: flex;
+    gap: 30px;
     list-style: none;
-
-}
-.item {
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #424242;    
 }
 
-/* Banner Styles Started  */
+/* Banner styles stated */
 
-.banner-container {
+.banner {
     text-align: center;
-    
+    padding: 120px 0px 20px 0px;
+}
+.banner p {
+    margin: 30px 0;
 }
 
-.banner-title {
-    font-weight: 700;
-    font-size: 64px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+.banner img {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
 }
 
-.banner-info {
-    font-weight: 400;
-    font-size: 16px;
+/* Quick feature styles started */
+
+.quick-feature {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 50px;
+}
+
+.feature-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature-dsc>p {
+    margin: 25px 0;
+}
+.h2-color1 {
     color: #727272;
-    margin-bottom: 20px;
 }
-.primary-button {
-    width: 180px;
-    height: 64px;
-    background-color: #FF900E;
-    color: white;
-    border: none;
+.h2-color2 {
+    color: #FF900E;
+}
+
+/* Great features styles started */
+
+.great-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 20px;
+}
+
+.features-love>p {
+    margin: 25px 0;
+}
+
+.feature-title {
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+
+.single-feature {
     border-radius: 5px;
-    font-size: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
 }
-.banner-img {
-    margin-top: 25px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    width: 65%;
+
+.engineer {
+    margin-top: -80px;
+    object-fit: contain;
+    max-width: 600px;
+}
+
+/* Big Button styles started */
+
+.big-button {
+    text-align: center;
+    position: relative;
+    top: -200px;
+    left: 80px;
+}
+.big-btn {
+    background-color: #FF900E;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding: 25px;
+}
+.btn-line1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.btn-line2 {
+    font-size: 25px;
+    font-weight: 500;
 }
