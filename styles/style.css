@@ -99,7 +99,7 @@ p {
     gap: 20px;
 }
 
-.feature-dsc>p {
+.feature-desc>p {
     margin: 25px 0;
 }
 .h2-color1 {
@@ -259,3 +259,48 @@ footer p {
 }
 
 /* End of the CSS */
+
+/* Responsive STYLES Started */
+
+@media only screen and (max-width: 576px) {
+    .menu-bar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .quick-feature {
+        flex-direction: column;
+    }
+
+    .feature-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .great-features {
+        flex-direction: column;
+    }
+
+    .engineer {
+        margin-top: -30px;
+    }
+
+    .big-button {
+        top: -170px;
+        left: 0;
+    }
+
+    .facts {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .sponsor-icon {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
