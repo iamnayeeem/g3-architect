@@ -267,12 +267,16 @@ footer p {
         flex-direction: column;
     }
 
+    .banner img {
+    padding: 0px 15px;
+    }
     .menu {
         margin-top: 20px;
     }
 
     .quick-feature {
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
     }
 
     .feature-img {
